@@ -1,218 +1,206 @@
-
-.home{
-    font-family:'Roboto';
-    text-decoration: none;
+/*---------- header ----------*/
+header{
+    background-color: var(--color-amarillo); /* color de fondo */
 }
 
-/**** header ****/
-
-.home header{
-    background-color: var(--color-amarillo);      
-}
-.home header img{
-    width: 50%;
-    height: auto;
-    padding: 10px;
-    margin-left: 10px;
+header .logo{
+    width: 38%; /* ancho */
+    padding: 28px 0 12px; /* relleno: superior, laterales e inferior */
+    margin-left: 24px; /* margen izquierdo */
 }
 
-.home header p {
-     text-align: center;
-     font-size: 12px;
-     margin-top: 10px;
-     margin-bottom: 10px;
-
+header .buscador{
+    margin-left: 15px; /* margen izquierdo */
 }
 
-/* Header -> search bar (Barra de búsqueda)*/
-
-.home .search{
-    padding: 0px;
-    margin-left: 10px;
-}
-.home .search .lupa{
-    margin-left: 5px;
+header .buscador .buscar{
+    width: 170px; /* ancho */
 }
 
-/*Header -> navbar (Barra de navegación)*/
-
-.home nav .navbar{
-    display: none;
-    font-size: 12px ;
-    text-align: left;
-    list-style: none;
-    margin-left:0px;
-    padding: 0;
+header .buscador button{
+    margin-left: 4px; /* margen izquierdo */
 }
 
-.home nav a{
-    text-decoration: none;
-    color: black;
+header p{
+    margin-top: 10px; /* margen superior */
+    font-size: 12px ; /* tamaño de letra */
+    text-align: center; /* centrar el texto */
 }
 
-/*Header -> Login bar (Barra de acceso)*/
-
-.home nav .login-bar{
-    display: none;
-    font-size: 12px ;
-    text-align: left;
-    list-style: none;
-    margin-left:0px;
-    padding: 0;
+header nav{
+    padding: 0 0 18px 10px; /* relleno: superior, derecha, inferior e izquierda */
+    display: none; /* no mostrar */
 }
 
-/*Header -> burger menu (menú hamburguesa)*/
+header nav ul{
+    margin-top: 20px; /* margen superior */
+    line-height: 13px; /* interlineado */
+}
 
-.home nav .burger{
-    display: block;
-    background-color: var(--color-celeste);
-    color: var(--color-gris-claro);
-    border-radius: 6px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    padding-top: 5px;
-    margin-left: auto;
-    margin-right: auto;      
+header nav ul a{
+    font-size: 12px ; /* tamaño de letra */
+    color: #000000; /* cambiar color */
+}  
+
+header .burger-menu{
+    padding: 18px 0; /* relleno: superior-inferior y laterales */
+    text-align: center; /* centrar */
+    border: none; /* sin bordes */
+}
+
+header .burger-menu .fa-bars{
+    color: rgb(255, 255, 255); /* color del icono */
+    background-color: var(--color-celeste); /* color de fondo */
+    padding: 10px; /* relleno: todos los lados */
+    border-radius: 5px; /* redondear borde */
+}
+
+/*----- banner -----*/
+.banner{
+    width: 100%; /* ancho */
+}
+
+/*---------- main ----------*/
+main{
+    background-color: var(--color-gris-claro); /* color de fondo */
+    padding-bottom: 10px; /* relleno inferior */
+}
+
+main .productos{
+    width: 90%; /* ancho */
+    margin-left: 5%; /* margen izquierdo */
+}
+
+main .productos h3{
+    font-size: 24px; /* tamaño de letra */
+    color: var(--color-gris-oscuro); /* color de letra */
+    padding: 10px 0 5px; /* relleno: superior, latereles e inferior */
+}
+
+main .productos article{
+    width: 100%; /* ancho */
+    background-color: rgb(255, 255, 255); /* color de fondo */
+    margin: 10px 0; /* margen: superior-inferior y laterales */
+}
+
+main .productos article img{
+    width: 100%; /* ancho */
+}
+
+main .productos article .caja{
+    border-top: 1px solid var(--color-gris-claro); /* borde: tamaño,forma y color */
+    padding: 15px; /* relleno: todos los lados */
+}
+
+main .productos article .caja .fa-truck{
+    font-size: 15px; /* tamaño */
+    color: var(--color-verde); /* color del icono */
+    padding: 12px 10px; /* relleno: superior-inferior y laterales */
+    border: 1px solid var(--color-verde); /* borde: tamaño,forma y color */
+    border-radius: 50%; /* redondear borde */
+}
+
+main .productos article .caja p{
+    font-size: 18px; /* tamaño de letra */
+}
+
+main .productos article .caja span{
+    display: inline-block; /* elemento en linea-bloque */
+    font-size: 16px; /* tamaño de letra */
+    color: var(--color-verde); /* color de letra */
+}
+
+main .productos article .caja h4{
+    font-size: 16px; /* tamaño de letra */
+    color: var(--color-gris-oscuro); /* color de letra */
+    padding-top: 20px; /* relleno superior */
+    display: none; /* no mostrar */
+}
+
+/*---------- footer ----------*/
+footer{
+    background-color: rgb(255, 255, 255); /* color de fondo */
+    text-align: center; /* centrar el texto */
+    color: var(--color-gris-oscuro); /* color de letra */
+    font-weight: 600; /* grosor de letra */
+}
+
+footer section article .fa-credit-card, .fa-gift, .fa-user-shield{
+   font-size: 2em; /* tamaño de icono */
+   color: var(--color-celeste); /* color de fondo */
+   padding: 60px 0 10px; /* relleno: superior, laterales e inferior */
+}
+
+footer section article h4{
+    font-size: 18px; /* tamaño de letra */
+    padding: 0 40px; /* relleno: superior-inferior y laterales */
+}
+
+footer section article p{
+    font-size: 12px; /* tamaño de letra */
+    padding: 0 40px; /* relleno: superior-inferior y laterales */
+}
+
+footer section .copyrihgt{
+    font-size: 12px; /* tamaño de letra */
+    text-align: left; /* texto a la izquierda */
+    padding: 60px 0 30px 10px; /* relleno: superior, derecha, inferior e izquierda */
 }
 
 
-/*main*/
+@media (min-width: 361px){
+/*---------- header ----------*/
+    header .logo{
+        width: 31%; /* ancho */
+        padding: 15px 0 10px; /* relleno: superior, laterales e inferior */
+    }
+    header nav, main .productos article .caja h4{
+        display: block; /* elemento en bloque */
+    } 
 
-.home .menu{
-    background-color: var(--color-gris-claro);
-    text-align: center;
-    width: 100%;
-  
- 
-}
-.home .caja{
-    display: flex;
-    background-color: var(--color-gris-claro);
-}
-.home .banner{
-    width: 100%;  
-}
+    header nav ul{
+        display:initial; /* valor inicial */
+    }
+    header .burger-menu{
+        display: none; /* no mostrar */
+    }
 
-.home .menu h2{
-    color: var(--color-gris-oscuro);
-    font-size: var(--Titulares);
-    margin-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 12px;
-}
-
-.home .menu .precios {
-    font-size: var(--Precios);
-
-}
-
-.home .menu span{
-    font-size: var(--Descuentos);
-  
-    color: var(--color-verde);
-}
-.home .menu .descripciones{ 
-    display: none;
-
-}
-.home .menu img{
-    width: 100%;  
-    padding: 0px 10px ;
+/*---------- main ----------*/
+    main .productos article{
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 ); /* efecto de sombra al marco */
+    }
     
 }
-.home .menu article{
-    margin-bottom: 10px;
-   
-}
 
-.home .menu article .art{
-    text-align: left;
-  border-top: solid 1px var(--color-gris-claro);
-
-  margin: 0px 10px;
-  padding: 0px 10px;
-  background-color: white
-}
-
-.home .menu article i{
-    text-align: left;
-    padding: 5px;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 100%;
-    color: #39b54a;
-}
-
-
-
-/*footer*/
-
-.home footer section{
-text-align: center;
-}
-
-
-.home footer p{
-color: var(--color-gris-oscuro);
-font-size: var(--Cuerpos-de-texto);
-text-align:center;
-margin: 0px 15px 30px 15px;
-
-}
-
-.home footer h4{
-  margin: 0px;
-   
-   
-}
-.home footer section i{
-
- color: var(--color-celeste);
- font-size: 2em;
- margin-top: 30px;
- margin-bottom: 10px;
- 
-}
-
-.home footer .copyright{
-
-    text-align: left;
-}
-
-
-@media (min-width:361px){
-
-    /*Header -> Login bar (Barra de acceso)*/
-
-    .home nav .login-bar{
-      display: block;
+@media (min-width: 426px){
+    
+/*---------- main ----------*/
+    main .productos{
+        width: 100%; /* ancho */
+        margin-left: 0%; /* margen izquierdo */
+        padding-left: 2%; /* relleno izquierdo */
+        overflow: hidden; /* contenido recortado */
     }
-    .home nav .navbar{
-     display: block;
+    main .productos article{
+        width: 48.5%; /* ancho */
+        float: left; /* elemento flotante a la izquierda */
+        margin-right: 1%; /* margen derecho */
     }
-     .home nav .burger{
-      display: none;
+}
+
+@media (min-width: 769px){
+
+/*---------- header ----------*/
+    header .logo{
+        width: 22%; /* ancho */
     }
 
-   /*main*/
-
-  .home .menu .descripciones{  
-   display: block;
-   color: var(--color-gris-oscuro);
-   
-
-  }
-
-  .home .menu article{
-    box-shadow: 0 0 10px rgb(100, 100, 100);
-  }
-      
-  
-}
-
-@media (min-width:769px){
-
+/*---------- main ----------*/   
+    main .productos{
+        padding-left: 1%; /* relleno izquierdo */
+    }
+    main .productos article{
+         width: 24%; /* ancho */
+    }
+    
 }

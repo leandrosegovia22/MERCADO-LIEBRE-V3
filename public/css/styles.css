@@ -1,3 +1,2 @@
-
-@import url('./general.css');
-@import url('./home.css');
+@import url('./general.css'); /* importación de hoja de estilo de general */
+@import url('./home.css'); /* importación de hoja de estilo de home */
